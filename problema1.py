@@ -21,6 +21,6 @@ def clasifica(duracion, clics):
         return "Medio"
 # procesar cada cliente y mostrar su categoría   
 for cliente in data:
-    id, duracion, clics = cliente
+    codigo, duracion, clics = cliente
     categoria = clasifica(duracion, clics)
-    print(f"Cliente {id}: Duración={duracion} segundos, Clics={clics}, Categoría={categoria}")
+    print(f"Cliente {codigo}: Duración={duracion} segundos, Clics={clics}, Categoría={categoria}")
